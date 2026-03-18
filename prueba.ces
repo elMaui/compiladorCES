@@ -1,0 +1,32 @@
+/*
+  Programa de prueba intensiva
+  Proyecto de Compiladores - Analizador Léxico
+*/
+vacio principal() {
+    // Declaración y asignación de variables
+    entero contador = 0;
+    flotante precio_base = 15.5;
+    
+    imprimir("Iniciando el ciclo principal");
+
+    // Uso de operadores lógicos, relacionales y palabras reservadas
+    mientras (contador <= 10 && precio_base != 0.0) {
+        si (contador == 5 || contador > 8) {
+            precio_base = precio_base - 1.2;
+        } sino {
+            // Operadores aritméticos y agrupación
+            precio_base = precio_base + (contador * 2) / 1;
+        }
+        
+        si (precio_base >= 100.0 < 500.0) {
+            contador = contador + 1;
+        }
+    }
+
+    // ERRORES INTENCIONALES: Estos caracteres no existen en nuestra gramática
+    entero calculo_erroneo = 100 @ 2;
+    flotante $dinero = 50.0;
+    # 
+    
+    regresa;
+}
