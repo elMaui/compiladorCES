@@ -1,5 +1,4 @@
-# Archivo: lector.py
-# Responsable: Persona 1
+# Responsable: Christian
 
 class LectorFuente:
     """

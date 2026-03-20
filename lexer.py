@@ -1,5 +1,4 @@
-# Archivo: lexer.py
-# Responsable: Persona 3
+# Responsable: Demma
 
 from tokens import TipoToken, Token, PALABRAS_RESERVADAS
 from lector import LectorFuente

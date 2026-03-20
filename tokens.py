@@ -1,5 +1,4 @@
-# Archivo: tokens.py
-# Responsable: Persona 2
+# Responsable: Jonathan
 
 from enum import Enum
 
@@ -48,7 +47,7 @@ class TipoToken(Enum):
     ERROR = "ERROR"                   # Para caracteres no válidos
 
 # Diccionario para búsqueda ultrarrápida de palabras reservadas.
-# La Persona 3 (Motor) usará esto para saber si un texto es variable o palabra clave.
+# Demma (Motor) usará esto para saber si un texto es variable o palabra clave.
 PALABRAS_RESERVADAS = {
     "entero": TipoToken.ENTERO,
     "flotante": TipoToken.FLOTANTE,

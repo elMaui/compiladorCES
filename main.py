@@ -1,5 +1,4 @@
-# Archivo: main.py
-# Responsable: Persona 4
+# Responsable: Diego
 
 import sys
 from lector import LectorFuente
@@ -8,13 +7,13 @@ from tokens import TipoToken
 
 def principal():
     # 1. Obtener la ruta del archivo de entrada
-    # Permite ejecutar: python main.py mi_codigo.c_esp
+    # Permite ejecutar: python main.py mi_codigo.ces
     if len(sys.argv) > 1:
         ruta_archivo = sys.argv[1]
     else:
         print("Uso: python main.py <archivo_fuente>")
-        print("Aviso: No se proporcionó archivo por terminal. Intentando leer 'prueba.c_esp' por defecto.\n")
-        ruta_archivo = "prueba.c_esp"
+        print("Aviso: No se proporcionó archivo por terminal. Intentando leer 'prueba.ces' por defecto.\n")
+        ruta_archivo = "prueba.ces"
 
     # 2. Leer el contenido del código fuente
     try:
@@ -46,7 +45,7 @@ def principal():
 
         # Agregamos el token válido a nuestra lista y lo imprimimos en consola
         tokens_procesados.append(token)
-        print(token) # Esto llama automáticamente al método __str__ de la Persona 2
+        print(token) # Esto llama automáticamente al método __str__ de Jonathan
 
         # Condición de salida: Si llegamos al End Of File
         if token.tipo == TipoToken.EOF:
